@@ -12,18 +12,25 @@ body{
   justify-content: space-between;
   padding-bottom: 44px;
 }
-.search-input {
+.input{
   background: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 2px;
-  height: 40px;
-  width: 690px;
   font-size: 16px;
   line-height: 24px;
-  background-image: url(../assets/Vector.png);
+  padding: 8px;
+  padding-left: 35px;
   background-repeat: no-repeat;
   background-position: left 11px center;
-  padding-left: 35px;
+}
+.input-address,
+.input-search{
+  width: 690px;
+  background-image: url(../assets/Vector.png);
+}
+.input-search{
+  width: 300px;
+  background-image: url(../assets/zoom.png);
 }
 .button {
   display: flex;
@@ -57,5 +64,98 @@ body{
 }
 
 .promo{
+  margin-bottom: 56px;
+}
+.section-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.section-title{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+flex-basis: 32%;
+width: 384px;
+height: 379.6px;
+left: 120px;
+top: 566.37px; 
+ overflow: hidden; 
+justify-content: space-between;
+}
+.card-image{
+  width: 384px;
+  height: 250px;
+  object-fit: cover;
+
+}
+.card-text{
+  padding-top: 20px;
+  padding-bottom: 35px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.card-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-title{
+  margin: 0; 
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+.card-tag{
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 20px;
+color: #ffffff;
+background: #262626;
+border-radius: 2px;
+padding: 1px 8px;
+}
+.card-info{
+  display: flex;
+  align-items: center;
+}
+.rating{
+margin-right: 26px;
+color: #ffc107;
+font-style: 18px;
+line-height: 32px;
+}
+.price,
+.category{
+color: #8c8c8c;
+font-size: 18px;
+line-height: 32px;
+}
+.price{
+  margin-right: 10px;
+}
+.price:after{
+  content: content"";
+  width: 5px;
+  height: 5px;
+  background-color: #8c8c8c;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: 50%;
+  margin-left: 10px;
+}
+.rating-star{
   
 }
