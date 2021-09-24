@@ -6,11 +6,21 @@ body{
   max-width: 1200px;
   margin: auto;
 }
+.main{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+  max-width: 1200px;
+
+}
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 44px;
+  padding-top: 44px;
+
 }
 .input{
   background: #ffffff;
@@ -23,9 +33,11 @@ body{
   background-repeat: no-repeat;
   background-position: left 11px center;
 }
+.input-address{
+  flex:0.8;
+}
 .input-address,
 .input-search{
-  width: 690px;
   background-image: url(../assets/Vector.png);
 }
 .input-search{
@@ -86,7 +98,7 @@ line-height: 42px;
 }
 .card{
 flex-basis: 32%;
-width: 384px;
+flex-basis: 31%;
 height: 379.6px;
 left: 120px;
 top: 566.37px; 
@@ -143,6 +155,12 @@ color: #8c8c8c;
 font-size: 18px;
 line-height: 32px;
 }
+.category{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 150px;
+}
 .price{
   margin-right: 10px;
 }
@@ -156,6 +174,37 @@ line-height: 32px;
   background-repeat: 50%;
   margin-left: 10px;
 }
-.rating-star{
+.footer{
+  padding: 60px 0;
+}
+.footer-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.footer-nav{
+  margin-right: auto;
+  margin-left: 35px;
+}
+.footer-link{
+  display: inline-block;
+  color: #595959;
+  text-decoration: none;
+}
+.footer-link:not(:last-child){
+  margin-right: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.section-links{
+  display: flex;
+  align-items: center;
   
+}
+.section-link:not(:last-child){
+margin-right: 21px;
 }
