@@ -104,7 +104,7 @@
     margin: 0;
   }
   .button{
-    min-height: 40px;
+    min-height: 30px;
   }
   .section-heading{
     flex-wrap: wrap;

@@ -43,6 +43,7 @@ body{
 .input-search{
   width: 300px;
   background-image: url(../assets/zoom.png);
+  margin-left: auto;
 }
 .button {
   display: flex;
@@ -54,9 +55,10 @@ body{
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
   border-radius: 2px;
   font-size: 16px;
-  line-height: 24px;
+  /* line-height: 24px; */
 }
 .button-primary {
+  cursor: pointer;
   background: #1890ff;
   border-radius: 2px;
   border: #1890ff;
@@ -74,14 +76,16 @@ body{
   display: flex;
   align-items: center;
 }
-
+.button-card-text{
+  margin-right: 10px;
+  font-size: 16px;
+}
 .promo{
   margin-bottom: 56px;
 }
 .section-heading{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 44px;
 }
 .section-title{
@@ -90,6 +94,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 36px;
 line-height: 42px;
+margin-right: 30px;
 }
 .cards{
   display: flex;
@@ -98,26 +103,28 @@ line-height: 42px;
 }
 .card{
 flex-basis: 32%;
-flex-basis: 31%;
 height: 379.6px;
 left: 120px;
 top: 566.37px; 
  overflow: hidden; 
 justify-content: space-between;
+text-decoration: none;
 }
 .card-image{
   width: 384px;
   height: 250px;
   object-fit: cover;
-
 }
 .card-text{
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
   padding-bottom: 35px;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .card-heading{
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -129,11 +136,15 @@ justify-content: space-between;
   font-size: 24px;
   line-height: 32px;
 }
+.card-title-reg{
+  font-weight: 400;
+
+}
 .card-tag{
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
-line-height: 20px;
+line-height:20px;
 color: #ffffff;
 background: #262626;
 border-radius: 2px;
@@ -142,9 +153,11 @@ padding: 1px 8px;
 .card-info{
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
+  height: 60px;
 }
 .rating{
-margin-right: 26px;
+/* margin-right: 26px; */
 color: #ffc107;
 font-style: 18px;
 line-height: 32px;
@@ -207,4 +220,24 @@ line-height: 32px;
 }
 .section-link:not(:last-child){
 margin-right: 21px;
+}
+.rating-star{
+  margin-right: 26px;
+  margin-left: 5px;
+}
+.ingredients{
+color: #8c8c8c;
+font-size: 18px;
+line-height: 21px;
+}
+.card-price-bald{
+  font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 32px;
+}
+.card-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
